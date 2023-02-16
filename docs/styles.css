@@ -116,6 +116,7 @@ font-size: 1.5rem;
 
 .navbar{
   background-color: rgb(126, 126, 126);
+  padding:1rem;
 }
 
 .horizontal a:hover{
@@ -296,7 +297,7 @@ img{
     .horizontal.vertical a{
       border: none;
       border-radius: 0;
-      padding: 4.5rem 3rem;
+      padding: 1.5rem 1rem;
       margin: 0 auto;
     }
   
