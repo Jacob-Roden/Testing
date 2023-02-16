@@ -311,6 +311,8 @@ img{
       margin: 0rem 1rem;
     }
 
+
+    /* TESTING ANIMATION */
     section img{
       transition: all .2s ease-in-out;
     }
@@ -318,7 +320,7 @@ img{
     section img:hover{
       transform: scale(1.15);
     }
-    
+    /* END TESTING ANIMATION */
     
     .container {
       display: grid;
