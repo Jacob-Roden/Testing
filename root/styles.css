@@ -18,9 +18,41 @@ vertical-align: baseline;
 /* Makes the header stick to the top of the page */
 nav{
   width:100%;
-  position: fixed;
+
 }
 
+/* Nav Link Styling */
+nav a{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+nav a:link{
+  color:rgb(0, 0, 0);
+  
+}
+
+nav a:visited{
+  color:rgb(0, 0, 0);
+  
+}
+
+nav a:hover{
+  color:rgb(0, 0, 0);
+  
+}
+
+nav a:active{
+  color:rgb(0, 0, 0);
+
+}
+
+h1{
+  font-family: "lores-12", sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
 /* Creates and style the hamburger menu icon, Changes display on screen size */
@@ -29,7 +61,7 @@ nav{
   display: none;
   position: absolute;
   border-radius: 25%;
-  padding: 1.5rem;
+  padding: 1.25rem;
   right: .75rem;
   top: .75rem;
 
@@ -46,10 +78,14 @@ nav{
 }
 
 .horizontal a{
+  font-family: "lores-12", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: normal;
+
   border: .2rem solid;
   border-color: black;
   text-decoration: none;
-  font-size: 1rem;
   
   display:flex;
   flex-direction: row;
@@ -61,10 +97,15 @@ nav{
 
 
 .active{
+  font-family: "video", serif;
+font-weight: 700;
+font-style: normal;
+font-size: 1.5rem;
+
   float:left;
   text-decoration: none;
   display:block;
-  padding: .5rem .5rem .25rem .5rem;
+  padding: 1.5rem 1rem;
  
 }
 
@@ -84,8 +125,8 @@ nav{
 /* BODY */
 
 main{
-  padding-top:10rem;
-  margin: 0rem 1rem;
+  padding-top:3rem;
+  margin: 0rem 1rem 12rem 1rem;
 
 }
 
@@ -93,8 +134,8 @@ main{
 
 footer{
   padding: 3rem 1.5rem;
-  background-color: black;
-  color:white;
+  
+  color:rgb(0, 0, 0);
 }
 
 footer ul{
@@ -107,27 +148,27 @@ footer ul{
 
 /* Footer Link Styling */
 footer a{
-  color:white;
+  color:rgb(0, 0, 0);
   text-decoration: none;
 }
 
 footer a:link{
-  color:white;
+  color:rgb(0, 0, 0);
   
 }
 
 footer a:visited{
-  color:white;
+  color:rgb(0, 0, 0);
   
 }
 
 footer a:hover{
-  color:white;
+  color:rgb(0, 0, 0);
   
 }
 
 footer a:active{
-  color:white;
+  color:rgb(0, 0, 0);
 
 }
 
@@ -158,6 +199,12 @@ footer a:active{
 
 /* --- Phone Screen Size --- */
 @media screen and (max-width:37.5rem) {
+  nav{
+    width:100%;
+    position: fixed;
+  }
+  
+
   .icon{
     display:block;
   }
