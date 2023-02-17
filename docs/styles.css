@@ -184,8 +184,6 @@ section{
 
 }
 
-
-
 img{
   width: 100%;
 }
@@ -276,7 +274,53 @@ img{
 
 
 
-@media only screen and (min-device-pixel-ratio: 2),
+
+
+/* Tablet Screen Size */
+@media screen and (min-width:37.5rem){
+.horizontal {
+  background-color: rgb(126, 126, 126);
+}
+
+.horizontal a{
+  background-color: rgb(124, 168, 197);
+}
+
+.container {
+  display: grid;
+  grid-template-columns:  repeat(2, 2fr);
+  grid-gap: 1rem;
+
+}
+
+    /* TESTING ANIMATION */
+    section img{
+      transition: all .2s ease-in-out;
+    }
+    
+    section img:hover{
+      transform: scale(1.05);
+    }
+    /* END TESTING ANIMATION */
+
+}
+
+/* Section Ends */
+
+/* Desktop Screen Size */
+@media screen and (min-width:60rem){
+
+  .container {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 1rem;
+  
+  }
+
+}
+
+/* Retina Display */
+@media screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi){
     nav{
       width:100%;
@@ -347,46 +391,3 @@ img{
     }
 
   }
-
-/* Tablet Screen Size */
-@media screen and (min-width:37.5rem){
-.horizontal {
-  background-color: rgb(126, 126, 126);
-}
-
-.horizontal a{
-  background-color: rgb(124, 168, 197);
-}
-
-.container {
-  display: grid;
-  grid-template-columns:  repeat(2, 2fr);
-  grid-gap: 1rem;
-
-}
-
-    /* TESTING ANIMATION */
-    section img{
-      transition: all .2s ease-in-out;
-    }
-    
-    section img:hover{
-      transform: scale(1.05);
-    }
-    /* END TESTING ANIMATION */
-
-}
-
-/* Section Ends */
-
-/* Desktop Screen Size */
-@media screen and (min-width:60rem){
-  .container {
-    display: grid;
-    grid-template-columns:  repeat(3, 1fr);
-    grid-gap: 1rem;
-  
-  }
-
-}
-
