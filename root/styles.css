@@ -174,19 +174,17 @@ footer a:active{
 
 .center{
   text-align: center;
+
 }
 
+
+/* Portfolio Grid*/
 section{
   justify-content: space-evenly;
 
 }
 
-.container {
-  display: grid;
-  grid-template-columns:  repeat(3, 1fr);
-  grid-gap: 1rem;
 
-}
 
 img{
   width: 100%;
@@ -197,10 +195,18 @@ img{
  
 }
 
-/* Portfolio Grid*/
+
 
 
 /* SECTION ENDS */
+
+
+
+
+
+
+
+
 
 /* --- Phone Screen Size --- */
 @media screen and (max-width:37.5rem) {
@@ -240,14 +246,10 @@ img{
     float: none;
     text-decoration: none;
     display:block;
-    
-    
-    
-  
   }
 
   main{
-    padding-top: 5rem;
+    padding-top: 6rem;
     margin: 0rem 1rem;
   }
 
@@ -265,6 +267,14 @@ img{
 }
 
 /* SECTION ENDS */
+
+
+
+
+
+
+
+
 
 @media only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi){
@@ -319,17 +329,6 @@ img{
       padding-top: 5rem;
       margin: 0rem 1rem;
     }
-
-
-    /* TESTING ANIMATION */
-    section img{
-      transition: all .2s ease-in-out;
-    }
-    
-    section img:hover{
-      transform: scale(1.15);
-    }
-    /* END TESTING ANIMATION */
     
     .container {
       display: grid;
@@ -359,7 +358,22 @@ img{
   background-color: rgb(124, 168, 197);
 }
 
+.container {
+  display: grid;
+  grid-template-columns:  repeat(2, 2fr);
+  grid-gap: 1rem;
 
+}
+
+    /* TESTING ANIMATION */
+    section img{
+      transition: all .2s ease-in-out;
+    }
+    
+    section img:hover{
+      transform: scale(1.05);
+    }
+    /* END TESTING ANIMATION */
 
 }
 
@@ -367,6 +381,12 @@ img{
 
 /* Desktop Screen Size */
 @media screen and (min-width:60rem){
+  .container {
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-gap: 1rem;
+  
+  }
 
 }
 
