@@ -11,8 +11,10 @@ padding: 0;
 border: 0;
 font-size: 100%;
 vertical-align: baseline;
-
+background-color: white;
 }
+
+
 /* HEADING */
 
 /* Makes the header stick to the top of the page */
@@ -54,7 +56,6 @@ h1{
   font-style: normal;
 }
 
-
 /* Creates and style the hamburger menu icon, Changes display on screen size */
 .icon{
   background: black;
@@ -75,6 +76,7 @@ h1{
   justify-content: right;
   padding: 1rem 1rem;
   flex:1;
+  list-style: none;
 }
 
 .horizontal a{
@@ -130,6 +132,85 @@ main{
 
 }
 
+.center{
+  text-align: center;
+
+}
+
+.about{
+  background-color: blue;
+  padding: 10rem 0rem;
+  margin-bottom: 5rem;
+  
+}
+
+
+/* Portfolio Grid*/
+.portfolio{
+  justify-content: space-evenly;
+
+}
+
+img{
+  width: 100%;
+}
+
+li{
+  height: min-content;
+}
+
+.container{
+  list-style: none;
+  
+}
+
+.container a{
+  text-decoration: none;
+}
+
+.container li{
+  display: grid;
+  transition: all .2s ease-in-out;
+}
+
+.container li:hover{
+  transform: scale(1.05);
+}
+
+.container img{
+  z-index: 1;
+}
+
+/* H2 Image Text*/
+.imageText{
+  position: relative;
+  top: -2rem;
+  color: white;
+  text-decoration: none;
+  padding: 0rem 1rem;
+  z-index: 10;
+
+  visibility: hidden;
+}
+
+/* On Hover make image Title visible */
+.container li a:hover .imageText{
+  transition: all .2s ease-in-out;
+  transform: translate(0, -1rem);
+  visibility: visible;
+}
+
+/* Section End */
+
+.button{
+  
+  background-color: gray;
+  color: black;
+  padding: 1rem;
+  float: right;
+  margin: 6rem 1rem 0rem 0rem;
+}
+
 /* FOOTER */
 
 footer{
@@ -172,30 +253,6 @@ footer a:active{
 
 }
 
-.center{
-  text-align: center;
-
-}
-
-
-/* Portfolio Grid*/
-section{
-  justify-content: space-evenly;
-
-}
-
-img{
-  width: 100%;
-}
-
-.container div{
-  display: grid;
- 
-}
-
-
-
-
 /* SECTION ENDS */
 
 
@@ -230,7 +287,7 @@ img{
     right:0;
     display:flex;
     flex-direction: column;
-
+    
   }
 
   .horizontal.vertical a{
@@ -293,16 +350,6 @@ img{
 
 }
 
-    /* TESTING ANIMATION */
-    section img{
-      transition: all .2s ease-in-out;
-    }
-    
-    section img:hover{
-      transform: scale(1.05);
-    }
-    /* END TESTING ANIMATION */
-
 }
 
 /* Section Ends */
@@ -319,8 +366,10 @@ img{
 
 }
 
-/* Retina Display */
-@media screen and (min-device-pixel-ratio: 2),
+
+
+/* Retina Display 
+@media screen and (min-device-pixel-ratio: 1.5),
   only screen and (min-resolution: 192dpi){
     nav{
       width:100%;
@@ -391,3 +440,5 @@ img{
     }
 
   }
+  */
+  

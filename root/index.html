@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
@@ -16,16 +17,16 @@
             <nav>
                 <div class="navbar">
 
-                    <div></div>
+                    <div>
                     <a href="index.html" class="active">Jacob Roden</a>
 
-                    <div class="horizontal" id="myTopnav">
+                    <ul class="horizontal" id="myTopnav">
                         
-                        <div><a href="portfolio.html">Portfolio</a></div>
-                        <div><a href="index.html">Commisions</a></div>
-                        <div><a href="index.html">About</a></div>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="index.html">Commisions</a></li>
+                        <li><a href="index.html">About</a></li>
                         
-                    </div>
+                    </ul>
                 </div>
                 
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
@@ -39,31 +40,42 @@
     <body>
         
         <main>
-
-            
-            <section class="container">
-                <div><a href="index.html"><img src="img/HewittUnion.png"></a></div>
-                <div><img src="img/HewittUnion.png"></div>
-                <div><img src="img/HewittUnion.png"></div>
-                <div><img src="img/HewittUnion.png"></div>
-                <div><img src="img/HewittUnion.png"></div>
-                <div><img src="img/HewittUnion.png"></div>
+            <section class="about">
+                <div class="center">
+                    <h1>Jacob Roden</h1>
+                    <hr>
+                    <p>an artist from Central New York</p>
+                    <hr>
+                </div>
                 
+                <div class="button"><a href="about.html">More About Me </a></div>
             </section>
+            
 
-            <h1>Jacob Roden</h1>
-            <hr>
-            <p>an artist from Central New York</p>
-            <hr>
-            <div><a href="about.html">More About Me </a></div>
-
+            <section class="portfolio">
+                <ul class="container">
+                
+                    <li><a href="index.html"><img src="img/HewittUnion.png"><h2 class="imageText">Image 1</h2></a></li>
+                    <li><a href="index.html"><img src="img/HewittUnion.png"><h2 class="imageText">Image 1</h2></a></li>
+                    <li><a href="index.html"><img src="img/HewittUnion.png"><h2 class="imageText">Image 1</h2></a></li>
+                    <li><a href="index.html"><img src="img/HewittUnion.png"><h2 class="imageText">Image 1</h2></a></li>
+                    <li><a href="index.html"><img src="img/HewittUnion.png"><h2 class="imageText">Image 1</h2></a></li>
+                    <li><a href="index.html"><img src="img/HewittUnion.png"><h2 class="imageText">Image 1</h2></a></li>
+                
+                
+                
+                    <a href="portfolio.html">View Full Portfolio</a>
+            
+                </ul>
+            </section>   
+                
         </main>
         
     <footer>
         <ul>
-            <li><a href="www.instagram.com">Instagram</a></li>
-            <li><a href="www.linkedin.com">LinkedIn</a></li>
-            <li><a href="https/www.facebook.com">Facebook</a></li>
+            <li><h3><a href="www.instagram.com">Instagram</a></h3></li>
+            <li><h3><a href="www.linkedin.com">LinkedIn</a></h3></li>
+            <li><h3><a href="https/www.facebook.com">Facebook</a></h3></li>
         </ul>
         <p>© 2023 Jacob Roden</p>
     </footer>
